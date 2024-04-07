@@ -5,7 +5,15 @@ font-primary: "Amatic SC", sans-serif;
 font-secondary: "Inter", sans-serif;
 
 color>>>>>>>>>>>>
+
+
 #eee
+#212529
+#37373f
+#7f7f90
+hsl( 0, 84%, 44% );
+
+
 responsive >>>
 flex >>>
 overlay >>
