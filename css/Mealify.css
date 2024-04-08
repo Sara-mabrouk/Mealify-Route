@@ -1,86 +1,280 @@
-:root{
+/* :root{
     --font-amatic :'Amatic SC, sans-serif';
     --font-Inter :'Inter, sans-serif';
-}
-*{
+} */
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 
 }
+
 html {
     scroll-behavior: smooth;
 }
 
 
-ul{
+ul {
     list-style: none;
 }
-a{
+
+a {
     color: #fff;
     text-decoration: none;
 }
+
 a,
 span {
     display: inline-block;
 }
-img{
-    width: 100%;
-}
-.container{
+
+
+
+.container {
     width: 90%;
     margin: 0 auto;
     padding: 0 50px;
 }
-.navbar{
+
+.navbar {
     left: 0;
     right: 0;
     position: fixed;
     z-index: 10;
-    background-color:#F5F5F5;
-    box-shadow: rgba(0,0,0, 0.1) 0px 4.5px 12px;
+    background-color: #F5F5F5;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4.5px 12px;
 }
-.navbar .container{
+
+.navbar .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-top: 25px;
-    padding-bottom:25px;
+    padding-bottom: 25px;
 }
-.container h1 .logo{
+
+.container h1 .logo {
     color: #37373f;
     font-family: system-ui, -apple-system, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
-font-size: 30px;
-cursor: pointer;
+    font-size: 30px;
+    cursor: pointer;
 }
-span{
-    color: hsl( 0, 84%, 44% );
+
+span {
+    color: hsl(0, 84%, 44%);
 
 }
-.navbar ul{
+
+.navbar ul {
     display: flex;
     gap: 32px;
 }
-.navbar ul li a{
+
+.navbar ul li a {
     position: relative;
     padding-top: 6px;
     padding-bottom: 6px;
     font-weight: 700;
-    font-family: system-ui, -apple-system,'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 20px;
+    font-family: system-ui, -apple-system, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 17px;
     color: #7f7f90;
     transition: all 0.4s ease-in-out;
 }
-.navbar ul li{
+
+.navbar ul li {
     position: relative;
 }
 
 
-.navbar ul li:nth-child(1) a{
-    color:#37373f ;
-    text-decoration:underline hsl( 0, 84%, 44% );
+.navbar ul li:nth-child(1) a {
+    color: #37373f;
+    text-decoration: underline hsl(0, 84%, 44%);
 }
+
 .fa-solid {
     font-size: 25px;
-    
+    cursor: pointer;
+
+
+}
+
+.home-section {
+    background-color: #eee;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.home-section .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 95px;
+
+}
+
+.home-section .home-content {
+    width: 40%;
+}
+
+.home-section .home-content h2 {
+    font-family: Amatic SC, sans-serif;
+    color: #37373f;
+    font-size: 65px;
+    font-weight: 700;
+}
+
+.home-section .home-content p {
+    font-family: system-ui, -apple-system, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 20px 0;
+    line-height: 25px;
+    color: #4f4f5a;
+}
+
+.home-section .buttons-home {
+    display: flex;
+    align-items: center;
+}
+
+.home-section .home-content .BookTable {
+    display: inline-block;
+    padding: 10px 25px;
+    border-radius: 0px 100px 100px;
+    margin-right: 25px;
+    font-family: system-ui, -apple-system,'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: hsl(0, 84%, 44%);
+
+}
+.home-section .home-content .BookTable:hover{
+    background-color: #E61414;
+    transition: all 0.4s ease-in-out;
+}
+.home-section .home-content .Video{
+    font-family: system-ui, -apple-system,'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    transition: all 0.4s ease-in-out;
+    display: flex;
+    align-items: center;
+    color: #000000;
+
+}
+.home-section .home-content .icon-background {
+    background: linear-gradient(90deg, hsl(0, 84%, 44%) 50%, hsl(0, 84%, 44%) 50%, transparent 50%, transparent 50%);
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home-section .home-content .fa-play{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #fff;
+    font-size: 15px;
+}
+.home-section .home-content .Video:hover{
+    color: #E61414;
+}
+.home-section .home-content .home-image{
+    width:100%;
+
+}
+.home-section .home-image img{
+    width: 100%;
+    filter: drop-shadow(10px 10px 10px #151419);
+    margin-top: 90px;
+
+}
+.home-section .home-image img:hover {
+    animation: snake 0.5s infinite;
+}
+@keyframes snake {
+    0% {
+        transform: translate(0) rotate(0deg);
+    }
+
+    20% {
+        transform: translate(-2px,2px) rotate(-1deg);
+    }
+
+    40% {
+        transform: translate(-2px,-2px) rotate(0deg);
+    }
+
+    60% {
+        transform: translate(2px,2px) rotate(1deg);
+    }
+
+    80% {
+        transform: translate(2px,-2px) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(0) rotate(-1deg);
+    }
+}
+/* responsive */
+
+/* small devices */
+/* @media screen and (min-width:640px) {
+
+
+} */
+
+
+
+.cheefs .content-cheef{
+    text-align: center;
+    margin: 50px auto;
+    padding: 40px 5px;
+    /* background-color: #E61414; */
+}
+.cheefs .content-cheef h2{
+    font-weight: 400;
+    font-family: Inter, sans-serif;
+    color: #7f7f90;
+    font-size: 15px;
+}
+.cheefs .content-cheef p{
+    font-family: Amatic SC, sans-serif;
+    font-size: 50px;
+}
+
+.cheefs .contant{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.cheefs .contant .card{
+    width: 30%;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 3px 3px 15px 0px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease-in-out;
+    position: relative;
+}
+/* .cheefs .content .card:hover {
+    scale: 1.07;
+} */
+.cheefs .card .icon-social {
+    background-color: #ffffff4d;
+    padding: 10px;
+    border-radius: 5px;
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    z-index: 999;
+    transition: right 0.4s ease-in-out;
+}
+
+.cheefs .contant .card:hover .icon-social{
+    right: 10px;
+    transition: right 0.4s ease-in-out;
+
 }
