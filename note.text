@@ -67,3 +67,60 @@ img:hover {
   90% { transform: translate(1px, 2px) rotate(0deg); }
   100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
+
+
+
+#note :
+section CHEFS
+ >>>> scal , bottom and rem
+ >>> line view in hover  
+
+
+
+
+
+
+
+
+
+
+
+#responsive
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+@media (min-width:575px) {
+    .container{
+        /* background-color: #E61414; */
+        width: 90%;
+    }
+    .navbar .container{
+        /* background-color: indianred; */
+    position: relative;
+    }
+    .navbar .link-list{
+    /* background-color: lawngreen; */
+    display: none;
+    }
+    .navbar .fa-solid{
+        font-size: 25px;
+    }
+    .home-section{
+        height: auto;
+    }
+    .home-section .container{
+        flex-flow: wrap column-reverse;
+    }
+    .home-section .home-content{
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    
+    }
+    .home-section .home-content .buttons-home{
+        justify-content: center;
+            flex-wrap: wrap;
+    }
+    
+    .home-section .home-image img{
+    width: 100%;
+    }
+    }

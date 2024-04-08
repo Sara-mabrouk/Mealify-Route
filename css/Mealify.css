@@ -28,7 +28,9 @@ span {
     display: inline-block;
 }
 
-
+img {
+    width: 100%;
+}
 
 .container {
     width: 90%;
@@ -142,16 +144,18 @@ span {
     padding: 10px 25px;
     border-radius: 0px 100px 100px;
     margin-right: 25px;
-    font-family: system-ui, -apple-system,'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: system-ui, -apple-system, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-color: hsl(0, 84%, 44%);
 
 }
-.home-section .home-content .BookTable:hover{
+
+.home-section .home-content .BookTable:hover {
     background-color: #E61414;
     transition: all 0.4s ease-in-out;
 }
-.home-section .home-content .Video{
-    font-family: system-ui, -apple-system,'Open Sans', 'Helvetica Neue', sans-serif;
+
+.home-section .home-content .Video {
+    font-family: system-ui, -apple-system, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 16px;
     transition: all 0.4s ease-in-out;
     display: flex;
@@ -159,6 +163,7 @@ span {
     color: #000000;
 
 }
+
 .home-section .home-content .icon-background {
     background: linear-gradient(90deg, hsl(0, 84%, 44%) 50%, hsl(0, 84%, 44%) 50%, transparent 50%, transparent 50%);
     height: 50px;
@@ -168,7 +173,8 @@ span {
     justify-content: center;
     align-items: center;
 }
-.home-section .home-content .fa-play{
+
+.home-section .home-content .fa-play {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -178,47 +184,53 @@ span {
     background-color: #fff;
     font-size: 15px;
 }
-.home-section .home-content .Video:hover{
+
+.home-section .home-content .Video:hover {
     color: #E61414;
 }
-.home-section .home-content .home-image{
-    width:100%;
+
+.home-section .home-content .home-image {
+    width: 100%;
 
 }
-.home-section .home-image img{
+
+.home-section .home-image img {
     width: 100%;
     filter: drop-shadow(10px 10px 10px #151419);
     margin-top: 90px;
 
 }
+
 .home-section .home-image img:hover {
     animation: snake 0.5s infinite;
 }
+
 @keyframes snake {
     0% {
         transform: translate(0) rotate(0deg);
     }
 
     20% {
-        transform: translate(-2px,2px) rotate(-1deg);
+        transform: translate(-2px, 2px) rotate(-1deg);
     }
 
     40% {
-        transform: translate(-2px,-2px) rotate(0deg);
+        transform: translate(-2px, -2px) rotate(0deg);
     }
 
     60% {
-        transform: translate(2px,2px) rotate(1deg);
+        transform: translate(2px, 2px) rotate(1deg);
     }
 
     80% {
-        transform: translate(2px,-2px) rotate(0deg);
+        transform: translate(2px, -2px) rotate(0deg);
     }
 
     100% {
         transform: translate(0) rotate(-1deg);
     }
 }
+
 /* responsive */
 
 /* small devices */
@@ -229,52 +241,120 @@ span {
 
 
 
-.cheefs .content-cheef{
+.cheefs .content-cheef {
     text-align: center;
     margin: 50px auto;
     padding: 40px 5px;
     /* background-color: #E61414; */
 }
-.cheefs .content-cheef h2{
+
+.cheefs .content-cheef h2 {
     font-weight: 400;
     font-family: Inter, sans-serif;
     color: #7f7f90;
     font-size: 15px;
 }
-.cheefs .content-cheef p{
+
+.cheefs .content-cheef p {
     font-family: Amatic SC, sans-serif;
     font-size: 50px;
 }
 
-.cheefs .contant{
+.cheefs .contant {
     display: flex;
     justify-content: space-between;
     padding: 20px 0;
 }
-.cheefs .contant .card{
+
+.cheefs .contant .card {
     width: 30%;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 3px 3px 15px 0px rgba(0, 0, 0, 0.1);
     transition: all 0.4s ease-in-out;
     position: relative;
+
 }
-/* .cheefs .content .card:hover {
-    scale: 1.07;
-} */
+
 .cheefs .card .icon-social {
     background-color: #ffffff4d;
-    padding: 10px;
+    padding: 15px;
     border-radius: 5px;
     position: absolute;
     top: 30px;
-    right: 50px;
+    right: -55px;
     z-index: 999;
     transition: right 0.4s ease-in-out;
+    width: fit-content;
+
 }
 
-.cheefs .contant .card:hover .icon-social{
+.cheefs .card .icon-social i {
+    color: #37373f66;
+
+}
+
+.cheefs .contant .card:hover .icon-social {
     right: 10px;
     transition: right 0.4s ease-in-out;
-
 }
+
+.cheefs .contant .card .icon-social li {
+    padding: 10px 5px;
+}
+
+.cheefs .contant .card .icon-social li a i:hover {
+    color: #101011;
+}
+
+.cheefs .contant .card .card-img img {
+    position: relative;
+}
+
+.cheefs .contant .card .card-img::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 60px;
+    bottom:10rem;
+    background-image: url(/img/team-shape.svg);
+    background-repeat: repeat-x;
+    /* background-color: #E61414; */
+}
+
+.cheefs .card .card-text {
+    padding: 25px;
+    padding-top: 10px;
+    /* background-color: #E61414; */
+}
+
+.cheefs .card .card-text h3 {
+    color: #212529;
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.cheefs .card .card-text h4 ,p{
+    color: #7f7f90;
+    text-align: center;
+    font-family:'Open Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.cheefs .card .card-text h4{
+    margin: 5px 0px 10px;
+}
+.cheefs .card .card-text p{
+    font-style: italic;
+}
+.cheefs .card:hover{
+    transition: all 0.4s ease-in-out;
+    scale: 1.07;
+}
+
+/* responsive */
+
