@@ -1,0 +1,38 @@
+@media (max-width:575px) {
+    .container{
+        flex-direction: column-reverse;
+        gap: 50px;
+    }
+    .navbar .container{
+        /* background-color: indianred; */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    /* background-color: blue; */
+    
+    }
+    .navbar .link-list{
+    /* background-color: lawngreen; */
+    /* display: none; */
+    }
+    .navbar .fa-solid{
+        display: none;
+    }
+
+    .home-section{
+        height: auto;
+    }
+
+.home-section .container .home-content {
+    width: 100% !important;
+    text-align: center;
+    
+    
+}
+.home-section .home-content h2{
+
+    font-size: 35px !important;
+}
+}

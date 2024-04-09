@@ -2,6 +2,7 @@
     --font-amatic :'Amatic SC, sans-serif';
     --font-Inter :'Inter, sans-serif';
 } */
+
 * {
     padding: 0;
     margin: 0;
@@ -83,21 +84,35 @@ span {
     transition: all 0.4s ease-in-out;
 }
 
-.navbar ul li {
-    position: relative;
-}
-
 
 .navbar ul li:nth-child(1) a {
     color: #37373f;
-    text-decoration: underline hsl(0, 84%, 44%);
 }
 
 .fa-solid {
     font-size: 25px;
     cursor: pointer;
+}
 
 
+.navbar ul li {
+    position: relative;
+}
+
+.navbar ul li::before {
+    content: "";
+    width: 0%;
+    height: 3px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: #E61414;
+    transition: width .5s;
+
+}
+
+.navbar ul li:hover::before {
+    width: 100%;
 }
 
 .home-section {
@@ -132,6 +147,7 @@ span {
     margin: 20px 0;
     line-height: 25px;
     color: #4f4f5a;
+    /* background-color: #E61414; */
 }
 
 .home-section .buttons-home {
@@ -191,14 +207,13 @@ span {
 
 .home-section .home-content .home-image {
     width: 100%;
+    filter: drop-shadow(10px 10px 10px #151419);
+
 
 }
 
 .home-section .home-image img {
-    width: 100%;
-    filter: drop-shadow(10px 10px 10px #151419);
-    margin-top: 90px;
-
+    width: 90%;
 }
 
 .home-section .home-image img:hover {
@@ -230,17 +245,7 @@ span {
         transform: translate(0) rotate(-1deg);
     }
 }
-
-/* responsive */
-
-/* small devices */
-/* @media screen and (min-width:640px) {
-
-
-} */
-
-
-
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 .cheefs .content-cheef {
     text-align: center;
     margin: 50px auto;
@@ -307,7 +312,7 @@ span {
     color: #101011;
 }
 
-.cheefs .contant .card .card-img img {
+.cheefs .contant .card .card-img {
     position: relative;
 }
 
@@ -317,7 +322,7 @@ span {
     left: 0;
     right: 0;
     height: 60px;
-    bottom:10rem;
+    bottom: -5px;
     background-image: url(/img/team-shape.svg);
     background-repeat: repeat-x;
     /* background-color: #E61414; */
@@ -337,24 +342,219 @@ span {
     text-align: center;
 }
 
-.cheefs .card .card-text h4 ,p{
+.cheefs .card .card-text h4,
+.cheefs .card .card-text p {
     color: #7f7f90;
     text-align: center;
-    font-family:'Open Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 15px;
     font-weight: 400;
 }
 
-.cheefs .card .card-text h4{
+.cheefs .card .card-text h4 {
     margin: 5px 0px 10px;
 }
-.cheefs .card .card-text p{
+
+.cheefs .card .card-text p {
     font-style: italic;
 }
-.cheefs .card:hover{
+
+.cheefs .card:hover {
     transition: all 0.4s ease-in-out;
     scale: 1.07;
 }
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>.. */
 
-/* responsive */
 
+
+
+
+
+/* footer */
+footer {
+    background-image: linear-gradient(#0009, #0009), url(/img/textured-metal-background.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0px -1px 5px #0007;
+    color: white;
+}
+
+footer .container {
+    display: flex;
+    flex-flow: row wrap;
+    margin: auto;
+    gap: 20px;
+    padding: 40px 5px;
+    width: 80%;
+}
+
+footer .container .mealify {
+    width: 24%;
+}
+
+footer .container .mealify .text-logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 4px;
+    position: relative;
+}
+
+footer .container .mealify img {
+    width: 15%;
+}
+
+footer .container .mealify h3 {
+    font-family: system-ui, -apple-system, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 30px;
+    position: absolute;
+    left: 55px;
+    font-weight: 700;
+}
+
+footer .container .mealify p {
+    font-family: system-ui, -apple-system, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    margin: 10px 0px;
+}
+
+footer .container .mealify h2 {
+    font-family: Inter, sans-serif;
+    text-align: center;
+    padding: 10px;
+    border-bottom: 2px solid #ddd6;
+    margin-bottom: 10px;
+}
+
+footer .container .mealify .social-media .social-icons {
+    padding: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer .container .mealify .social-media .social-icons a {
+    font-size: 20px;
+}
+
+footer .container .Subscribe {
+    width: 48%;
+}
+
+footer .container .Newsletter {
+    display: flex;
+    gap: 5px;
+    margin: 20px 0px;
+    flex-flow: row wrap;
+}
+
+footer .container .Newsletter input {
+    padding: 10px;
+    font-weight: 400;
+    font-family: 'Inter, sans-serif';
+    font-size: 15px;
+    flex-grow: 1;
+    border: none;
+}
+
+footer .container .subscribe-btn {
+    background-color: hsl(0, 84%, 44%);
+    color: hsl(0, 0%, 100%);
+    padding: 12px;
+    text-align: center;
+    border: none;
+    transition: all 0.4s ease-in-out;
+
+}
+
+footer .container .subscribe-btn i {
+    font-weight: 900;
+    font-size: 15px;
+}
+
+footer .container .Subscribe p {
+    font-weight: 400;
+    margin-block: 10px;
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+}
+
+footer .container .Subscribe h3 {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+
+}
+
+footer .container .Subscribe ul {
+
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    margin-top: 10px;
+}
+
+footer .container .Subscribe ul li {
+    padding: 5px;
+    transition: all 0.4s ease-in-out;
+    width: calc(50% - 20px);
+}
+
+footer .container .Subscribe ul li:hover{
+    transform: translateX(10px);
+    background-color: #222;
+
+}
+footer .container .Subscribe ul li a{
+    color: #fff;
+    font-weight: 400;
+    font-family: "Inter", sans-serif;
+    
+
+
+}
+footer .container .Subscribe ul li span{
+    color: white;
+    margin-right: 4px;
+
+}
+footer .container .Subscribe ul li .fa-fw{
+    font-size: 20px;
+}
+
+
+footer .Get {
+    width: 24%;
+}
+
+footer .Get h3{
+font-family: "Inter", sans-serif;
+font-weight: 700;
+margin-bottom: 10px;
+}
+footer .Get ul{
+    display: flex;
+    gap: 10px;
+    flex-flow: column wrap;
+}
+footer .Get ul li{
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    font-weight: 400;
+
+}
+footer .Get ul li a{
+    color: white;
+    font-weight:400;
+}
+
+footer .Get ul li span .fa-fw{
+    text-align: center;
+    color: hsl(0, 84%, 44%);
+    margin-right: 10px;
+    font-size: 21px;
+    
+}

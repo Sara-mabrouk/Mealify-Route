@@ -25,25 +25,6 @@ footer >>>
 hover >>> ul li a 
 
 
->>>>...
-/* The animation code */
-@keyframes example {
-  0%   {background-color: red;}
-  25%  {background-color: yellow;}
-  50%  {background-color: blue;}
-  100% {background-color: green;}
-}
-
-/* The element to apply the animation to */
-div {
-  width: 100px;
-  height: 100px;
-  background-color: red;
-  animation-name: example;
-  animation-duration: 4s;
-}
- 
-
  >>>>>>>>>>>>>>>.....
 https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_shake
 >>>>>>>>>>>..
@@ -74,15 +55,6 @@ img:hover {
 section CHEFS
  >>>> scal , bottom and rem
  >>> line view in hover  
-
-
-
-
-
-
-
-
-
 
 
 #responsive
@@ -124,3 +96,11 @@ section CHEFS
     width: 100%;
     }
     }
+
+
+>>>>>>>>>>>>>>>>>>>>>.
+https://developer.mozilla.org/en-US/docs/Web/CSS/calc
+>>>>>>>>>>>>>>>>>>>>>>
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translateX
+>>>>>>>>>>>>>>
