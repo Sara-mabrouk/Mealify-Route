@@ -29,9 +29,7 @@ span {
     display: inline-block;
 }
 
-img {
-    width: 100%;
-}
+
 
 .container {
     width: 90%;
@@ -248,7 +246,6 @@ span {
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 .cheefs .content-cheef {
     text-align: center;
-    margin: 50px auto;
     padding: 40px 5px;
     /* background-color: #E61414; */
 }
@@ -315,7 +312,9 @@ span {
 .cheefs .contant .card .card-img {
     position: relative;
 }
-
+.cheefs .contant .card .card-img img{
+    width: 100%;
+}
 .cheefs .contant .card .card-img::after {
     content: "";
     position: absolute;
@@ -364,11 +363,72 @@ span {
     scale: 1.07;
 }
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>.. */
+.gallery{
+    background-color: #eee;
+    padding: 40px 0px;
+    /* background-color: red; */
 
 
+}
+.gallery .tittle-gallery{
+    text-align: center;
+    margin-bottom: 25px;
+}
+.gallery .tittle-gallery h2{
+    font-weight: 400;
+    font-family: Inter, sans-serif;
+    color: #7f7f90;
+    font-size: 15px;
+    text-transform: uppercase;
 
+}
+.gallery .tittle-gallery p{
+    font-family: "Amatic SC", sans-serif;
+    font-size: 50px;
+}
+.gallery .photo{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap:20px;
+    height:72.8125rem;
+}
+.gallery .photo .pizza{
+    width: calc(calc(100% - 30px*2) / 3);
+    border: 5px solid #fff;
+    position: relative;
+    overflow: hidden;
+}
+.gallery .pizza img{
+    width: 100%;
+}
+.gallery .pizza .layer-pizza{
+width: 100%;
+height: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+text-align: center;
+color: #F5F5F5;
+z-index: 9;
+left: 0;
+top: 100%;
+position: absolute;
+background-color: hsla(0, 0%, 0%, 0.51);
+padding: 15px;
+gap: 5px;
 
+}
+.gallery .pizza:hover .layer-pizza{
+    top: 0;
+    transition: all 0.4s ease-in-out;
 
+}
+.gallery .pizza:hover img {
+transition: all 0.4s ease-in-out;
+    scale: 1.1;
+
+}
 
 /* footer */
 footer {
